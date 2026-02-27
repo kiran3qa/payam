@@ -40,6 +40,6 @@ class MainActivity : FlutterActivity() {
     private fun isNotificationListenerEnabled(context: Context): Boolean {
         val cn = ComponentName(context, PayNotificationListener::class.java)
         val flat = Settings.Secure.getString(context.contentResolver, "enabled_notification_listeners")
-        return !TextUtils.isEmpty(flat) && flat.contains(cn.flattenToString())
+        return !TextUtils.isEmpty(flat) && flat.contains(cn.flattenToShortString())
     }
 }
