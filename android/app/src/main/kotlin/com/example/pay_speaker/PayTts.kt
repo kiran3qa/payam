@@ -31,7 +31,7 @@ object PayTts {
         }
     }
 
-    fun speak(context: Context, text: String) {
+    fun speak(context: Context, text: String, rate: Float = 1.0f, pitch: Float = 1.0f) {
         init(context)
         if (isReady.get()) {
             val params = Bundle().apply {
