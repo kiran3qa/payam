@@ -1,4 +1,4 @@
-package com.example.paynotifier
+package com.example.pay_speaker
 
 import android.content.ComponentName
 import android.content.Context
