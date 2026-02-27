@@ -29,7 +29,7 @@ class MainActivity : FlutterActivity() {
                     "speak" -> {
                         val args = call.arguments as? Map<*, *>
                         val text = (args?.get("text") as? String) ?: "Payment speaker is ready."
-                        PayTts.speak(this, text, 1.0f, 1.0f, 1.0f)
+                        PayTts.speak(this, text, 1.0f, 1.0f)
                         result.success(true)
                     }
                     else -> result.notImplemented()
